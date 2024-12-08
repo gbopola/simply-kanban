@@ -8,9 +8,13 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        md: "var(--font-size-medium)",
+      },
       colors: {
         black: "var(--black)",
         "very-dark-grey": "var(--very-dark-grey)",
+        input: "var(--input)",
         "dark-grey": "var(--dark-grey)",
         "lines-dark": "var(--lines)",
         "medium-grey": "var(--medium-grey)",

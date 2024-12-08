@@ -1,6 +1,8 @@
 import Input from "@/components/Input/Input";
 import Button from "../components/Button";
 import Label from "@/components/Label";
+import SelectDropdown from "@/components/SelectDropdown";
+import Checkbox from "@/components/Checkbox";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
         <Label htmlFor="label">Text Field (error)</Label>
         <Input variant="error" isInvalid placeholder="Enter task name" />
       </div>
+      <SelectDropdown options={["Todo", "Doing", "Done"]} />
+      <Checkbox label="Checkbox" />
     </div>
   );
 }

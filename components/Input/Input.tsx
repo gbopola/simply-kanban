@@ -21,7 +21,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           className={cn(inputVariants({ variant }), className)}
         />
         {variant === "error" && (
-          <p className="text-error font-medium text-[13px] absolute right-[15px] top-[12px]">
+          <p className="text-error font-medium text-md absolute right-[15px] top-[11px]">
             Can't be empty
           </p>
         )}
@@ -31,7 +31,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 );
 
 const inputVariants = cva(
-  "block w-full rounded border-0 py-3 px-3.5 ring-1 text-[13px] ring-inset ring-[#e0e3e8] text-black font-medium placeholder:text-[#bfbfc4] focus:ring-primary focus:ring-2 focus:outline-0 transition",
+  "block w-full rounded border-0 py-2.5 px-3.5 ring-1 text-md ring-inset ring-input text-black font-medium placeholder:text-[#bfbfc4] focus:ring-primary focus:ring-2 focus:outline-0 transition",
   {
     variants: {
       variant: {

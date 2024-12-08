@@ -33,7 +33,7 @@ export default function Button({
 }
 
 const buttonVariants = cva(
-  "inline-flex justify-center items-center font-bold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition-colors disabled:opacity-25 disabled:pointer-events-none",
+  "inline-flex justify-center items-center font-bold text-md text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition-colors disabled:opacity-25 disabled:pointer-events-none",
   {
     variants: {
       variant: {
@@ -45,7 +45,7 @@ const buttonVariants = cva(
           "bg-error hover:bg-error-hover focus-visible:outline-error",
       },
       size: {
-        sm: "px-3.5 py-2.5 text-[13px] rounded-[20px]",
+        sm: "px-3.5 py-2.5 rounded-[20px]",
         lg: "px-6 py-3 text-[15px] rounded-3xl",
       },
     },
