@@ -5,12 +5,11 @@ import { cn } from "@/utils/cn";
 
 // Define the variant-based styles using cva
 const checkboxStyles = cva(
-  "col-start-1 row-start-1 appearance-none cursor-pointer rounded-sm border border-input checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+  "col-start-1 row-start-1 appearance-none cursor-pointer rounded-sm border border-input dark:border-input-dark checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
   {
     variants: {
       color: {
-        primary:
-          "checked:border-primary checked:bg-primary bg-dark-grey border-[#414552]",
+        primary: "checked:border-primary checked:bg-primary bg-dark-grey",
         secondary: "checked:border-secondary checked:bg-secondary", // Add more colors as needed
       },
 

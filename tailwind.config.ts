@@ -15,6 +15,7 @@ export default {
         black: "var(--black)",
         "very-dark-grey": "var(--very-dark-grey)",
         input: "var(--input)",
+        "input-dark": "var(--input-dark)",
         "dark-grey": "var(--dark-grey)",
         "lines-dark": "var(--lines)",
         "medium-grey": "var(--medium-grey)",

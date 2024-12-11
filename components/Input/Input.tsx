@@ -31,11 +31,11 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 );
 
 const inputVariants = cva(
-  "block w-full rounded border-0 py-2.5 px-3.5 ring-1 text-md ring-inset ring-input text-black font-medium placeholder:text-[#bfbfc4] focus:ring-primary focus:ring-2 focus:outline-0 transition",
+  "block w-full rounded border-0 py-2.5 px-3.5 ring-1 text-md ring-inset ring-input text-black dark:text-white font-medium placeholder:text-[#bfbfc4] placeholder:dark:text-[#606169] focus:ring-primary focus:ring-2 focus:outline-0 transition bg-white dark:bg-dark-grey",
   {
     variants: {
       variant: {
-        default: "",
+        default: "dark:ring-input-dark",
         error: "ring-error",
       },
     },
