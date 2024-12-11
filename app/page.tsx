@@ -1,8 +1,8 @@
-import Input from "@/components/Input/Input";
 import Button from "../components/Button";
 import Label from "@/components/Label";
 import SelectDropdown from "@/components/SelectDropdown";
 import Checkbox from "@/components/Checkbox";
+import Input from "@/components/Input";
 
 export default function Home() {
   return (
