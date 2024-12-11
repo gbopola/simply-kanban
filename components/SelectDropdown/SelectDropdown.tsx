@@ -13,7 +13,8 @@ const dropdownStyles = {
     {
       variants: {
         intent: {
-          default: "bg-white text-black ring-input focus:ring-primary",
+          default:
+            "bg-white dark:bg-dark-grey text-black dark:text-white ring-input dark:ring-input-dark focus:ring-primary",
         },
         size: {
           small: "text-sm py-1",
@@ -28,7 +29,7 @@ const dropdownStyles = {
     }
   ),
   menu: cva(
-    "absolute right-0 z-10 w-full mt-2 origin-top rounded-md bg-white transition focus:outline-none",
+    "absolute right-0 z-10 w-full mt-2 origin-top py-2 rounded-md bg-white dark:bg-very-dark-grey transition focus:outline-none",
     {
       variants: {
         position: {
@@ -42,7 +43,7 @@ const dropdownStyles = {
     }
   ),
   menuItem: cva(
-    "block w-full px-4 py-1 text-left text-md font-medium text-medium-grey transition data-[focus]:text-black data-[focus]:outline-none"
+    "block w-full px-4 py-1 text-left text-md font-medium text-medium-grey transition data-[focus]:text-black dark:data-[focus]:text-white data-[focus]:outline-none"
   ),
 };
 

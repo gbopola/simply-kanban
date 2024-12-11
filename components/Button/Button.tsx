@@ -40,7 +40,7 @@ const buttonVariants = cva(
         primary:
           "bg-primary hover:bg-primary-hover focus-visible:outline-primary",
         secondary:
-          "bg-secondary hover:bg-secondary-hover text-primary ring-primary focus-visible:outline-primary",
+          "bg-secondary dark:bg-white hover:dark:bg-none text-primary ring-primary focus-visible:outline-primary",
         destructive:
           "bg-error hover:bg-error-hover focus-visible:outline-error",
       },
