@@ -1,6 +1,6 @@
 import { cva } from "class-variance-authority";
-import { LuLoader2 } from "react-icons/lu";
 import { cn } from "@/utils/cn";
+import { LuLoader } from "react-icons/lu";
 
 type ButtonProps = React.HTMLAttributes<HTMLButtonElement> & {
   variant?: "primary" | "secondary" | "destructive";
@@ -26,7 +26,7 @@ export default function Button({
       disabled={disabled || loading}
       className={cn(buttonVariants({ variant, size }), className)}
     >
-      {loading && <LuLoader2 className="mr-2 h-4 w-4 animate-spin" />}
+      {loading && <LuLoader className="mr-2 h-4 w-4 animate-spin" />}
       {props.children}
     </button>
   );

@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={PlusJakartaSans.className}>
+    <html lang="en" className={PlusJakartaSans.className + " dark"}>
       <body>{children}</body>
     </html>
   );
