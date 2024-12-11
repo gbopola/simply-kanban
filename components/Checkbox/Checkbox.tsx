@@ -27,12 +27,10 @@ const checkboxStyles = cva(
 export default function Checkbox({
   label,
   color = "primary",
-  size = "medium",
   disabled = false,
 }: {
   label: string;
   color?: "primary" | "secondary";
-  size?: "small" | "medium" | "large";
   disabled?: boolean;
 }) {
   const [checked, setChecked] = useState(false);
